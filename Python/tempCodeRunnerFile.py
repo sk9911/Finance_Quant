@@ -1,0 +1,1 @@
+x*exp(-self.interest_rate*n)
