@@ -196,9 +196,9 @@ def check_slist(slist):
 if __name__ == '__main__':
 	print('Start')
 
-	n = int(st.number_input('Number of stocks to enter'))
+	n = int(st.number_input('Number of stocks to enter'), value=int(3))
 	st.write('Number entered: ', n)
-	NUM_PORTFOLIOS = int(st.number_input('Number of portfolios to simulate', 10000))
+	NUM_PORTFOLIOS = int(st.number_input('Number of portfolios to simulate', value=int(10000)))
 	st.write('Number entered: ', NUM_PORTFOLIOS)
 
 	stocks = []
