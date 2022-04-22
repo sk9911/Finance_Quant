@@ -7,13 +7,10 @@ import scipy.optimize as optimization
 import streamlit as st
 import datetime
 import pickle
-import cloudpickle as cp
-from urllib.request import urlopen
-
-tickers = cp.load(urlopen("https://drive.google.com/file/d/1xkC4WsHJ4wRH06Lhgu14JQ2zPOWX01uj", 'rb')) 
 
 NUM_TRADING_DAYS = 252
-# TICKER_FILE = r"./Tickers.txt"
+gdown 1xkC4WsHJ4wRH06Lhgu14JQ2zPOWX01uj
+TICKER_FILE = r"./Tickers.txt"
 
 def download_data(stocks, start_date, end_date):
     """Downloads the historical price data for the given
@@ -229,8 +226,8 @@ def show_optimum_portfolio(optimum, means, risks, returns):
 
 if __name__ == "__main__":
 
-    # with open(TICKER_FILE, "rb") as fp:  # Unpickling
-    #     tickers = pickle.load(fp)
+    with open(TICKER_FILE, "rb") as fp:  # Unpickling
+        tickers = pickle.load(fp)
 
     stocks = st.multiselect("Pick stocks", tickers)
 
