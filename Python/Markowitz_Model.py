@@ -7,7 +7,7 @@ import scipy.optimize as optimization
 import streamlit as st
 import datetime
 import pickle
-import cloudpickle
+import cloudpickle as cp
 from urllib.request import urlopen
 
 tickers = cp.load(urlopen("https://drive.google.com/file/d/1xkC4WsHJ4wRH06Lhgu14JQ2zPOWX01uj", 'rb')) 
