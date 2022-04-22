@@ -204,7 +204,7 @@ if __name__ == '__main__':
 	stocks = []
 
 	for _ in range(n):
-		name = st.text_input('Stock Name', key=_)
+		name = st.text_input('Stock Ticker', key=_)
 		if name[-1:-3]!='.NS':
 			name = name +'.NS'
 		stocks.append(name)
