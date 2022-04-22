@@ -7,9 +7,10 @@ import scipy.optimize as optimization
 import streamlit as st
 import datetime
 import pickle
+import gdown
 
 NUM_TRADING_DAYS = 252
-gdown 1xkC4WsHJ4wRH06Lhgu14JQ2zPOWX01uj
+gdown '1xkC4WsHJ4wRH06Lhgu14JQ2zPOWX01uj'
 TICKER_FILE = r"./Tickers.txt"
 
 def download_data(stocks, start_date, end_date):
