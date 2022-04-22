@@ -6,4 +6,5 @@ matplotlib
 seaborn
 scipy
 datetime
+cloudpickle
 
