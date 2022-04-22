@@ -9,7 +9,7 @@ import datetime
 import pickle
 
 NUM_TRADING_DAYS = 252
-TICKER_FILE = r"Tickers.txt"
+TICKER_FILE = r"./Tickers.txt"
 
 
 def download_data(stocks, start_date, end_date):
