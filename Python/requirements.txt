@@ -1,4 +1,4 @@
-yfinance
++yfinance
 streamlit
 numpy
 pandas
@@ -6,3 +6,5 @@ matplotlib
 seaborn
 scipy
 datetime
+pickle
+
